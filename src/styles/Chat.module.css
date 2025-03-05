@@ -42,7 +42,7 @@
     font-size: 1.4em;
   }
   .chatbotContainer{
-    height: 100%;
+    height: calc(100vh - 89px);
     width: 85%;
     margin: auto;
   }
@@ -86,25 +86,14 @@
     bottom: -3px;
     z-index: 30;
   }
-  .chatResponseContainer{
-    height: 85%;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
   .chatresponseContainer {
+    max-height: 75vh;
     overflow-y: auto;
     padding: 10px;
     white-space: pre-line;
+  }
+  .chatresponseContainer::-webkit-scrollbar {
+    display: none;
   }
   .responseBox{
     text-align: left;
@@ -118,10 +107,75 @@
   
   .userMessage {
     margin-left: auto;
-    background: #0d6efd;
+    background: var(--main-color);
     color: #fff;
   }
   
   .botMessage {
     margin-right: auto;
   }
+
+  /* Start Button */
+.startButton {
+  background-color: var(--main-color);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #fff;
+}
+
+/* Copy Button */
+.copyButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Floating text message */
+.floatingText {
+  position: fixed;
+  bottom: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-transparent-color);
+  color: white;
+  padding: 10px;
+  border-radius: 5px !important;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Add a fade-out effect */
+.floatingText.fade-out {
+  opacity: 0;
+}
+.shortlistNameContainer{
+  height: calc(100% - 100px);
+  margin-bottom: 20px;
+
+}
+.modalDialog{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.modalFooter{
+  border: none !important;
+}
+.clearBtn{
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+.modalText{
+  font-family: 'Figtree', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+}
