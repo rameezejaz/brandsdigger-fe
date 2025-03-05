@@ -1,13 +1,7 @@
 /* src/styles/App.module.css */
 .app {
-    font-family: Arial, sans-serif;
+    font-family: Figtree, serif;
     text-align: center;
-  }
-  
-  header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
   }
   
   /* Add other global styles */

@@ -1,6 +1,7 @@
 // src/services/api.ts
 export const getBusinessName = async (message: string): Promise<{ message: string }> => {
     const API_URL = 'https://eae2-182-190-32-95.ngrok-free.app/generate/names'; // Ensure correct URL
+    // const API_URL = '#'; // Ensure correct URL
   
     try {
       const response = await fetch(API_URL, {

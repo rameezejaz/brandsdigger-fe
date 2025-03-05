@@ -26,3 +26,102 @@
     cursor: pointer;
   }
   
+
+
+
+
+
+
+
+  .shortlistedBox{
+    background: #EFF3EA;
+    height: calc(100vh - 89px);
+    padding: 20px 15px;
+  }
+  .shortlistedHeading{
+    font-size: 1.4em;
+  }
+  .chatbotContainer{
+    height: 100%;
+    width: 85%;
+    margin: auto;
+  }
+  .chatInputBox{
+    width: 60% !important;
+    position: absolute !important;
+    right: 50%;
+    bottom: 5.6%;
+    transform: translateX(50%);
+  }
+  .chatInputBox textarea{
+    padding: 10px 45px 10px 15px;
+    border-color: #9a9a9a !important;
+    outline: none !important;
+    font-family: figtree, sans-serif;
+    font-size: 1.05em;
+    border-radius: 10px !important;
+    max-height: 140px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  }
+  .chatInputBox textarea::-webkit-scrollbar {
+    width: 6px;
+  }
+  .chatInputBox textarea::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+  .chatInputBox textarea::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  .chatInputBox textarea::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change color when hovering over the thumb */
+  }
+
+  .chatInputBox button{
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    position: absolute;
+    right: 15px;
+    bottom: -3px;
+    z-index: 30;
+  }
+  .chatResponseContainer{
+    height: 85%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .chatresponseContainer {
+    overflow-y: auto;
+    padding: 10px;
+    white-space: pre-line;
+  }
+  .responseBox{
+    text-align: left;
+    background-color: #f3f3f3;
+    padding: 14px 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    max-width: 50%;
+    width:max-content;
+  }
+  
+  .userMessage {
+    margin-left: auto;
+    background: #0d6efd;
+    color: #fff;
+  }
+  
+  .botMessage {
+    margin-right: auto;
+  }
