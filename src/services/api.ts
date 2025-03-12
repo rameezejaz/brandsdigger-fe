@@ -1,5 +1,5 @@
 export const getBusinessName = async (message: string): Promise<{ message: string }> => {
-    const API_URL = 'https://eae2-182-190-32-95.ngrok-free.app/generate/names'; 
+    const API_URL = import.meta.env.VITE_API_URL;
     try {
       const response = await fetch(API_URL, {
         method: 'POST',

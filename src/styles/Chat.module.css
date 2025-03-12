@@ -2,7 +2,19 @@
 .chatContainer {
     margin-top: 30px;
   }
+.bdShortlistColumn{
+  width: 20%
+}
+.bdChatBoxColumn{
+  width: 80%;
+}
   
+.btnClearHistory{
+  background: #409266;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1em;
+}
   .chatBox {
     border: 1px solid #ddd;
     padding: 20px;
@@ -25,14 +37,6 @@
     padding: 10px;
     cursor: pointer;
   }
-  
-
-
-
-
-
-
-
   .shortlistedBox{
     background: #EFF3EA;
     height: calc(100vh - 89px);
@@ -136,6 +140,7 @@
   cursor: pointer;
 }
 
+
 /* Floating text message */
 .floatingText {
   position: fixed;
@@ -178,4 +183,35 @@
   font-family: 'Figtree', sans-serif;
   font-size: 1.1em;
   font-weight: 500;
+}
+
+@media(max-width: 1345px){
+  .bdShortlistColumn{
+    width: 23%
+  }
+  .bdChatBoxColumn{
+    width: 77%;
+  }
+}
+@media(max-width: 1130px){
+  .bdShortlistColumn{
+    width: 25%
+  }
+  .bdChatBoxColumn{
+    width: 75%;
+  }
+}
+@media(max-width: 992px){
+  .bdShortlistColumn{
+    display: none;
+  }
+  .bdChatBoxColumn{
+    width: 100%;
+  }
+}
+@media(max-width: 600px){
+  .chatbotContainer{
+    width: 100%;
+    padding: 0px 15px;
+  }
 }
