@@ -26,13 +26,9 @@ const Header: React.FC = () => {
                             <span className={styles.bar}></span>
                         </div>
 
-                        <div className={`${styles.navBox} ${isOpen ? styles.open : ""}`}>
+                        <div className={`${styles.navBox} ${isOpen ? styles.open : ""} d-none`}>
                             <ul className={styles.navLinks}>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><Link to="/">Home</Link></li>
                             </ul>
                         </div>
                     </nav>

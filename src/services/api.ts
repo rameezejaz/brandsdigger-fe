@@ -16,7 +16,6 @@ export const getBusinessName = async (message: string): Promise<{ message: strin
         throw new Error('Network response was not ok');
       }
       const data = await response.json();
-      console.log(data)
       return data;
     } catch (error) {
       console.error('Error fetching business name:', error);

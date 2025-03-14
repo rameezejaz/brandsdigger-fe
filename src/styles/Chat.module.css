@@ -10,9 +10,9 @@
 }
   
 .btnClearHistory{
-  background: #409266;
-  color: #fff;
-  font-weight: 500;
+  background-color: #409266 !important;
+  color: #fff !important;
+  font-weight: 400 !important;
   font-size: 1.1em;
 }
   .chatBox {
@@ -185,6 +185,11 @@
   font-weight: 500;
 }
 
+@media(max-width: 1380px){
+  .chatresponseContainer{
+    max-height: 70vh
+  }
+}
 @media(max-width: 1345px){
   .bdShortlistColumn{
     width: 23%
@@ -213,5 +218,8 @@
   .chatbotContainer{
     width: 100%;
     padding: 0px 15px;
+  }
+  .chatInputBox{
+    width: 80% !important;
   }
 }
